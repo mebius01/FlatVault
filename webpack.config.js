@@ -82,6 +82,7 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: './src/img/icon.png', // svg works too!
       filename: '[name].[ext]',
+      publicPath: '',
       prefix: 'img/icon/'
     }),
 
