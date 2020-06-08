@@ -157,6 +157,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/img/icon.png":
+/*!**************************!*\
+  !*** ./src/img/icon.png ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/icon.png\");\n\n//# sourceURL=webpack:///./src/img/icon.png?");
+
+/***/ }),
+
 /***/ "./src/img/logo.png":
 /*!**************************!*\
   !*** ./src/img/logo.png ***!
@@ -189,7 +201,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/logo.png */ \"./src/img/logo.png\");\n/* harmony import */ var _img_brands_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/brands.png */ \"./src/img/brands.png\");\n\n// import '../img/icon.png'\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/icon.png */ \"./src/img/icon.png\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/logo.png */ \"./src/img/logo.png\");\n/* harmony import */ var _img_brands_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/brands.png */ \"./src/img/brands.png\");\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
