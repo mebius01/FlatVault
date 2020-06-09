@@ -64,6 +64,7 @@ body {
   color: $textColorOnDark
 }
 
+
 .text-on-loght {
   color: $textColorOnLoght;
 }
@@ -224,10 +225,47 @@ body {
       @extend .h-on-lofht;
     }
 
-    .text {
-      @extend .text-on-loght;
-    }
 
+    .features {
+      padding-right: 63px;
+
+      .text {
+        @extend .text-on-loght;
+        line-height: 26px;
+      }
+
+      .advantage-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .advantage-list__item {
+
+          .num {
+            color: white;
+            background: $red;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            margin-right: 15px;
+            line-height: 48px;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            top: 15px;
+            left: 0;
+          }
+
+          .text {
+            margin-left: 68px;
+            line-height: 8px;
+          }
+
+        }
+      }
+    }
   }
 
   .nout {
@@ -261,6 +299,7 @@ body {
 
     .text {
       @extend .text-on-loght;
+      line-height: 26px;
     }
 
     background-color: white;
