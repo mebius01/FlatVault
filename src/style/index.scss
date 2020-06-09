@@ -10,38 +10,78 @@ $textColorOnDark: rgb(255, 255, 255);
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: normal;
 }
 
 .lato {
   font-family: 'Lato', sans-serif
 }
 
-.raleway {
-  font-family: 'Raleway', sans-serif
-}
-
 .container {
   width: 960px;
+  // border: blue 1px solid;
+  display: grid;
+  margin: auto;
 }
 
 .h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 48px;
-  line-height: normal;
 }
 
-.h2 {}
+.h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
 
 .h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.h-on-lofht {
+  color: $HtextColorOnLoght;
+}
+
+.h-on-dark {
+  color: $textColorOnDark
+}
+
+.text-on-loght {
+  color: $textColorOnLoght;
+}
+
+.text-on-darck {
+  color: $textColorOnDark
+}
+
+.left-line {
+  border-left: solid 4px $red;
+  padding-left: 15px;
+}
+
+.bottom-line {
+  width: 80px;
+  height: 4px;
+  background-color: $red;
+  margin: 25px auto 0 auto;
 }
 
 .header {
@@ -49,42 +89,38 @@ body {
   color: $textColorOnDark;
 
   .grid {
-    display: grid;
-    grid-template-columns: auto 375px;
+    @extend .container;
+    grid-template-columns: auto auto;
     grid-template: "whowe form";
     gap: 60px;
-    margin: auto;
 
     .whowe {
       grid-area: whowe;
       padding: 75px 0 145px 0;
 
-
-      .tagline {
-        border-left: solid 4px $red;
-        padding-left: 15px;
-        margin-top: 94px;
-        margin-bottom: 44px;
+      .logo {
+        margin-bottom: 80px;
       }
 
       .header__text {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
+        display: block;
         font-size: 18px;
-        line-height: normal;
+
+        margin-top: 35px;
       }
 
       .detail {
-        display: block;
-        width: 250px;
         margin-top: 54px;
-        padding: 17px;
-        background-color: $red;
-        text-align: center;
+        display: block;
         text-decoration: none;
+        text-align: center;
+        width: 250px;
+        background-color: $red;
+        cursor: pointer;
         color: $textColorOnDark;
         font-size: 18px;
         line-height: 22px;
+        padding: 15px 0 15px 15px;
       }
 
     }
@@ -92,15 +128,13 @@ body {
     .form {
       grid-area: form;
       width: 375px;
-      background-image: url(../img/form-bg.png);
-      background-size: cover;
-      height: calc(100vh - 45px);
+      height: 90%;
+      background-color: rgb(238, 239, 241);
 
       .form__header {
         background-color: $red;
-        padding: 31px;
+        padding: 30px 30px 74px 30px;
         text-align: center;
-        height: 134px;
         clip-path: polygon(0% 0%,
             100% 0%,
             100% 75%,
@@ -134,7 +168,6 @@ body {
 
           input[type=submit] {
             background-color: $red;
-            color: $textColorOnDark;
             cursor: pointer;
             color: $textColorOnDark;
             font-size: 18px;
@@ -173,5 +206,63 @@ body {
         clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
       }
     }
+  }
+}
+
+.main {
+  background-color: $background-body;
+
+  .advantage {
+    background-color: white;
+    padding: 60px 30px;
+    display: flex;
+
+    .h2,
+    .h3,
+    .h4,
+    .h5 {
+      @extend .h-on-lofht;
+    }
+
+    .text {
+      @extend .text-on-loght;
+    }
+
+  }
+
+  .nout {
+    background-color: $red;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    .title {
+      text-align: center;
+      width: 600px;
+      margin-bottom: 36px;
+
+      .bottom-line {
+        background-color: white;
+      }
+    }
+  }
+
+  .enjoy {
+
+    .h2,
+    .h3,
+    .h4,
+    .h5 {
+      @extend .h-on-lofht;
+    }
+
+    .text {
+      @extend .text-on-loght;
+    }
+
+    background-color: white;
   }
 }
