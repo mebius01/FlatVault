@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../img/texture.original.jpeg */ \"./src/img/texture.original.jpeg\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../img/form-bg.png */ \"./src/img/form-bg.png\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  padding: 0;\\n  font-family: \\\"Arial\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 16px;\\n  line-height: normal;\\n}\\n\\n.lato {\\n  font-family: \\\"Lato\\\", sans-serif;\\n}\\n\\n.container {\\n  width: 960px;\\n}\\n\\n.h1 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 48px;\\n  line-height: normal;\\n}\\n\\n.h3 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 28px;\\n  line-height: normal;\\n}\\n\\n.header {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  color: white;\\n}\\n.header .grid {\\n  display: grid;\\n  grid-template-columns: auto 375px;\\n  grid-template: \\\"whowe form\\\";\\n  gap: 60px;\\n  margin: auto;\\n}\\n.header .grid .whowe {\\n  grid-area: whowe;\\n  padding: 75px 0 145px 0;\\n}\\n.header .grid .whowe .tagline {\\n  border-left: solid 4px #e2574c;\\n  padding-left: 15px;\\n  margin-top: 94px;\\n  margin-bottom: 44px;\\n}\\n.header .grid .whowe .header__text {\\n  font-size: 18px;\\n  line-height: normal;\\n}\\n.header .grid .whowe .detail {\\n  display: block;\\n  width: 250px;\\n  margin-top: 54px;\\n  padding: 17px;\\n  background-color: #e2574c;\\n  text-align: center;\\n  text-decoration: none;\\n  color: white;\\n  font-size: 18px;\\n  line-height: 22px;\\n}\\n.header .grid .form {\\n  grid-area: form;\\n  width: 375px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  background-size: cover;\\n  height: calc(100vh - 100px);\\n}\\n.header .grid .form .form__header {\\n  background-color: #e2574c;\\n  padding: 31px;\\n  text-align: center;\\n  height: 134px;\\n  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 60% 75%, 50% 90%, 40% 75%, 0% 75%);\\n}\\n.header .grid .form .form__content *:focus {\\n  outline: none;\\n}\\n.header .grid .form .form__content .form__item {\\n  margin: 16px 20px;\\n}\\n.header .grid .form .form__content .form__item input[type=text],\\n.header .grid .form .form__content .form__item input[type=submit],\\n.header .grid .form .form__content .form__item select {\\n  border: none;\\n  width: 100%;\\n  color: #8f96a9;\\n  font-size: 13px;\\n  padding: 15px 0 15px 15px;\\n}\\n.header .grid .form .form__content .form__item input[type=text] {\\n  width: calc(100% - 15px);\\n}\\n.header .grid .form .form__content .form__item input[type=submit] {\\n  background-color: #e2574c;\\n  color: white;\\n  cursor: pointer;\\n  color: white;\\n  font-size: 18px;\\n  line-height: 22px;\\n}\\n.header .nav {\\n  grid-area: nav;\\n  background-color: #17262d;\\n  width: 100%;\\n  display: flex;\\n  justify-content: center;\\n}\\n.header .nav .brand {\\n  list-style: none;\\n  padding: 25px 0;\\n  display: flex;\\n  justify-content: space-between;\\n}\\n.header .nav .brand__item a {\\n  display: block;\\n  text-decoration: none;\\n  background-color: #374d5b;\\n  padding: 20px;\\n}\\n.header .nav .brand .active {\\n  background-color: #e2574c;\\n  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../img/texture.original.jpeg */ \"./src/img/texture.original.jpeg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  padding: 0;\\n  font-family: \\\"Arial\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 16px;\\n}\\n\\n.lato {\\n  font-family: \\\"Lato\\\", sans-serif;\\n}\\n\\n.container, .header .grid {\\n  width: 960px;\\n  display: grid;\\n  margin: auto;\\n}\\n\\n.h1 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 48px;\\n}\\n\\n.h2 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 700;\\n  font-size: 36px;\\n}\\n\\n.h3 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 700;\\n  font-size: 24px;\\n}\\n\\n.h4 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 900;\\n  font-size: 20px;\\n}\\n\\n.h5 {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 900;\\n  font-size: 18px;\\n}\\n\\n.h-on-lofht, .main .enjoy .h2, .main .enjoy .h3, .main .enjoy .h4, .main .enjoy .h5, .main .advantage .h2, .main .advantage .h3, .main .advantage .h4, .main .advantage .h5 {\\n  color: #474c56;\\n}\\n\\n.h-on-dark {\\n  color: white;\\n}\\n\\n.text-on-loght, .main .enjoy .text, .main .advantage .text {\\n  color: #8f96a9;\\n}\\n\\n.text-on-darck {\\n  color: white;\\n}\\n\\n.left-line {\\n  border-left: solid 4px #e2574c;\\n  padding-left: 15px;\\n}\\n\\n.bottom-line {\\n  width: 80px;\\n  height: 4px;\\n  background-color: #e2574c;\\n  margin: 25px auto 0 auto;\\n}\\n\\n.header {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  color: white;\\n}\\n.header .grid {\\n  grid-template-columns: auto auto;\\n  grid-template: \\\"whowe form\\\";\\n  gap: 60px;\\n}\\n.header .grid .whowe {\\n  grid-area: whowe;\\n  padding: 75px 0 145px 0;\\n}\\n.header .grid .whowe .logo {\\n  margin-bottom: 80px;\\n}\\n.header .grid .whowe .header__text {\\n  display: block;\\n  font-size: 18px;\\n  margin-top: 35px;\\n}\\n.header .grid .whowe .detail {\\n  margin-top: 54px;\\n  display: block;\\n  text-decoration: none;\\n  text-align: center;\\n  width: 250px;\\n  background-color: #e2574c;\\n  cursor: pointer;\\n  color: white;\\n  font-size: 18px;\\n  line-height: 22px;\\n  padding: 15px 0 15px 15px;\\n}\\n.header .grid .form {\\n  grid-area: form;\\n  width: 375px;\\n  height: 90%;\\n  background-color: #eeeff1;\\n}\\n.header .grid .form .form__header {\\n  background-color: #e2574c;\\n  padding: 30px 30px 74px 30px;\\n  text-align: center;\\n  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 60% 75%, 50% 90%, 40% 75%, 0% 75%);\\n}\\n.header .grid .form .form__content *:focus {\\n  outline: none;\\n}\\n.header .grid .form .form__content .form__item {\\n  margin: 16px 20px;\\n}\\n.header .grid .form .form__content .form__item input[type=text],\\n.header .grid .form .form__content .form__item input[type=submit],\\n.header .grid .form .form__content .form__item select {\\n  border: none;\\n  width: 100%;\\n  color: #8f96a9;\\n  font-size: 13px;\\n  padding: 15px 0 15px 15px;\\n}\\n.header .grid .form .form__content .form__item input[type=text] {\\n  width: calc(100% - 15px);\\n}\\n.header .grid .form .form__content .form__item input[type=submit] {\\n  background-color: #e2574c;\\n  cursor: pointer;\\n  color: white;\\n  font-size: 18px;\\n  line-height: 22px;\\n}\\n.header .nav {\\n  grid-area: nav;\\n  background-color: #17262d;\\n  width: 100%;\\n  display: flex;\\n  justify-content: center;\\n}\\n.header .nav .brand {\\n  list-style: none;\\n  padding: 25px 0;\\n  display: flex;\\n  justify-content: space-between;\\n}\\n.header .nav .brand__item a {\\n  display: block;\\n  text-decoration: none;\\n  background-color: #374d5b;\\n  padding: 20px;\\n}\\n.header .nav .brand .active {\\n  background-color: #e2574c;\\n  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);\\n}\\n\\n.main {\\n  background-color: #e9eaec;\\n}\\n.main .advantage {\\n  background-color: white;\\n  padding: 60px 30px;\\n  display: flex;\\n}\\n.main .nout {\\n  background-color: #e2574c;\\n  color: white;\\n  display: flex;\\n  flex-flow: column nowrap;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 60px;\\n}\\n.main .nout .title {\\n  text-align: center;\\n  width: 600px;\\n  margin-bottom: 36px;\\n}\\n.main .nout .title .bottom-line {\\n  background-color: white;\\n}\\n.main .enjoy {\\n  background-color: white;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -145,15 +145,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/img/form-bg.png":
-/*!*****************************!*\
-  !*** ./src/img/form-bg.png ***!
-  \*****************************/
+/***/ "./src/img/client.png":
+/*!****************************!*\
+  !*** ./src/img/client.png ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/form-bg.png\");\n\n//# sourceURL=webpack:///./src/img/form-bg.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/client.png\");\n\n//# sourceURL=webpack:///./src/img/client.png?");
 
 /***/ }),
 
@@ -169,6 +169,54 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/img/icon1.png":
+/*!***************************!*\
+  !*** ./src/img/icon1.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/icon1.png\");\n\n//# sourceURL=webpack:///./src/img/icon1.png?");
+
+/***/ }),
+
+/***/ "./src/img/icon2.png":
+/*!***************************!*\
+  !*** ./src/img/icon2.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/icon2.png\");\n\n//# sourceURL=webpack:///./src/img/icon2.png?");
+
+/***/ }),
+
+/***/ "./src/img/icon3.png":
+/*!***************************!*\
+  !*** ./src/img/icon3.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/icon3.png\");\n\n//# sourceURL=webpack:///./src/img/icon3.png?");
+
+/***/ }),
+
+/***/ "./src/img/laptop.png":
+/*!****************************!*\
+  !*** ./src/img/laptop.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/laptop.png\");\n\n//# sourceURL=webpack:///./src/img/laptop.png?");
+
+/***/ }),
+
 /***/ "./src/img/logo.png":
 /*!**************************!*\
   !*** ./src/img/logo.png ***!
@@ -178,6 +226,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/logo.png\");\n\n//# sourceURL=webpack:///./src/img/logo.png?");
+
+/***/ }),
+
+/***/ "./src/img/mobile.png":
+/*!****************************!*\
+  !*** ./src/img/mobile.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/mobile.png\");\n\n//# sourceURL=webpack:///./src/img/mobile.png?");
 
 /***/ }),
 
@@ -201,7 +261,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/icon.png */ \"./src/img/icon.png\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/logo.png */ \"./src/img/logo.png\");\n/* harmony import */ var _img_brands_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/brands.png */ \"./src/img/brands.png\");\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/icon.png */ \"./src/img/icon.png\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/logo.png */ \"./src/img/logo.png\");\n/* harmony import */ var _img_brands_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/brands.png */ \"./src/img/brands.png\");\n/* harmony import */ var _img_mobile_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/mobile.png */ \"./src/img/mobile.png\");\n/* harmony import */ var _img_laptop_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/laptop.png */ \"./src/img/laptop.png\");\n/* harmony import */ var _img_icon1_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/icon1.png */ \"./src/img/icon1.png\");\n/* harmony import */ var _img_icon2_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/icon2.png */ \"./src/img/icon2.png\");\n/* harmony import */ var _img_icon3_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/icon3.png */ \"./src/img/icon3.png\");\n/* harmony import */ var _img_client_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/client.png */ \"./src/img/client.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

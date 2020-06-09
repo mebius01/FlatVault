@@ -13,7 +13,6 @@ body {
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: normal;
 }
 
 .lato {
@@ -22,22 +21,62 @@ body {
 
 .container {
   width: 960px;
+  // border: blue 1px solid;
+  display: grid;
+  margin: auto;
 }
 
 .h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 48px;
-  line-height: normal;
 }
 
-.h2 {}
+.h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
 
 .h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+.h4{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+.h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.h-on-lofht {
+    color: $HtextColorOnLoght;
+}
+.h-on-dark {
+  color: $textColorOnDark
+}
+.text-on-loght {
+  color: $textColorOnLoght;
+}
+.text-on-darck {
+  color: $textColorOnDark
+}
+
+.left-line {
+  border-left: solid 4px $red;
+  padding-left: 15px;
+}
+
+.bottom-line {
+  width: 80px;
+  height: 4px;
+  background-color: $red;
+  margin: 25px auto 0 auto;
 }
 
 .header {
@@ -45,11 +84,10 @@ body {
   color: $textColorOnDark;
 
   .grid {
-    display: grid;
+    @extend .container;
     grid-template-columns: auto auto;
     grid-template: "whowe form";
     gap: 60px;
-    margin: auto;
 
     .whowe {
       grid-area: whowe;
@@ -58,15 +96,11 @@ body {
       .logo {
         margin-bottom: 80px;
       }
-      .tagline {
-        border-left: solid 4px $red;
-        padding-left: 15px;
-      }
-
+      
       .header__text {
         display: block;
         font-size: 18px;
-        line-height: normal;
+    
         margin-top: 35px;
       }
 
@@ -168,5 +202,48 @@ body {
         clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
       }
     }
+  }
+}
+.main{
+  background-color: $background-body;
+  .advantage {
+    background-color: white;
+    padding: 60px 30px;
+    display: flex;
+    .h2, .h3, .h4, .h5 {
+      @extend .h-on-lofht;
+    }
+    .text {
+    @extend .text-on-loght;
+    }
+
+  }
+  .nout {
+    background-color: $red;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    .title {
+      text-align: center;
+      width: 600px;
+      margin-bottom: 36px;
+
+      .bottom-line {
+      background-color: white;
+      }
+    }
+  }
+  .enjoy {
+    .h2, .h3, .h4, .h5 {
+      @extend .h-on-lofht;
+    }
+    .text {
+    @extend .text-on-loght;
+    }
+    background-color: white;
   }
 }
