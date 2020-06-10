@@ -15,6 +15,10 @@ body {
   font-size: 16px;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .lato {
   font-family: "Lato", sans-serif;
 }
@@ -77,6 +81,10 @@ body {
   padding-left: 15px;
 }
 
+.title {
+  text-align: center;
+}
+
 .bottom-line {
   width: 80px;
   height: 4px;
@@ -134,15 +142,13 @@ body {
         background-color: $red;
         padding: 30px 30px 74px 30px;
         text-align: center;
-        clip-path: polygon(
-          0% 0%,
-          100% 0%,
-          100% 75%,
-          60% 75%,
-          50% 90%,
-          40% 75%,
-          0% 75%
-        );
+        clip-path: polygon(0% 0%,
+            100% 0%,
+            100% 75%,
+            60% 75%,
+            50% 90%,
+            40% 75%,
+            0% 75%);
       }
 
       .form__content {
@@ -221,7 +227,7 @@ body {
     .h3,
     .h4,
     .h5 {
-      @extend .h-on-lofht;
+      color: $HtextColorOnLoght;
     }
 
     .features {
@@ -272,9 +278,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 60px 0;
+    position: relative;
+
+    .text {
+      line-height: 26px;
+    }
 
     .title {
-      text-align: center;
       width: 600px;
       margin-bottom: 36px;
 
@@ -282,21 +292,257 @@ body {
         background-color: white;
       }
     }
+
+    iframe {
+      position: absolute;
+      bottom: 83px;
+    }
   }
 
   .enjoy {
+
     .h2,
     .h3,
     .h4,
     .h5 {
-      @extend .h-on-lofht;
+      color: $HtextColorOnLoght;
     }
 
     .text {
-      @extend .text-on-loght;
+      color: $textColorOnLoght;
       line-height: 26px;
     }
 
-    background-color: wheat;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px 30px 30px;
+
+    .title {
+      width: 600px;
+      margin-bottom: 36px;
+
+      .bottom-line {
+        background-color: $red;
+      }
+    }
+
+    .enjoy-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 43px;
+
+      .enjoy-list__item {
+        padding: 0 11px 16px 11px;
+        text-align: center;
+
+        .h5 {
+          margin-top: 21px;
+          // margin-bottom: 11px;
+        }
+
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .comment {
+    background-color: #ffecb3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px 40px 30px;
+
+    .text {
+      color: $HtextColorOnLoght;
+    }
+
+    &__img {
+      margin-right: 30px;
+    }
+
+    .left-line {
+      height: 127px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      span {
+        display: block;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: white;
+
+    .h2,
+    .h3,
+    .h4,
+    .h5 {
+      color: $HtextColorOnLoght;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 35px 24px;
+      background-color: white;
+
+
+      &__round {
+        width: 165px;
+        height: 165px;
+        position: relative;
+        margin-bottom: 30px;
+
+        %for-dollar-prise {
+          border-radius: 50%;
+          background-color: $background-body;
+          text-align: center;
+          width: 165px;
+          height: 165px;
+          color: $HtextColorOnLoght;
+          font-size: 72px;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card__dollar {
+          @extend %for-dollar-prise;
+          width: 50px;
+          height: 50px;
+          color: $red;
+          font-size: 28px;
+          position: absolute;
+        }
+
+        .card__price {
+          @extend %for-dollar-prise;
+          color: $HtextColorOnLoght;
+          font-size: 72px;
+        }
+      }
+
+      .bottom-line {
+        margin: 12px auto 0 auto;
+      }
+
+      &__content {
+        text-align: center;
+        color: $textColorOnLoght;
+      }
+
+      &__detail {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: $red;
+        color: white;
+        font-weight: 600;
+        padding: 15px 0px;
+      }
+
+      &:hover {
+        background-color: $red;
+
+        .card__detail {
+          background-color: white;
+          color: $red;
+        }
+
+        .h3,
+        .card__item {
+          color: white;
+        }
+
+        .bottom-line {
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  color: white;
+
+  .title {
+    background-image: url(../img/texture.original.jpeg);
+    padding: 58px 0 38px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .h3 {
+      color: $red;
+    }
+
+    span {
+      display: block;
+    }
+
+    .footer__btn {
+      text-decoration: none;
+      display: block;
+      width: 350px;
+      text-align: center;
+      background-color: $red;
+      color: white;
+      font-weight: 600;
+      padding: 15px 0px;
+      margin: 35px auto;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__item {
+        list-style: none;
+
+      }
+
+      &__link {
+        text-decoration: none;
+        display: block;
+        padding: 10px 16px;
+        background-color: $red;
+        margin: 12px;
+        font-family: Lato;
+        color: white;
+        font-weight: 800;
+        // font-size: 34px;
+      }
+    }
+  }
+
+  .e {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    background-color: $nav-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0;
   }
 }
