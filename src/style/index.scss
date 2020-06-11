@@ -60,32 +60,39 @@ ul {
   font-size: 18px;
 }
 
-.h-on-lofht {
-  color: $HtextColorOnLoght;
-}
-
-.h-on-dark {
-  color: $textColorOnDark;
-}
-
-.text-on-loght {
-  color: $textColorOnLoght;
-}
-
-.text-on-darck {
-  color: $textColorOnDark;
-}
-
 .left-line {
   border-left: solid 4px $red;
   padding-left: 15px;
 }
 
+.d-flex-centr{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  display: block;
+  text-align: center;
+  line-height: 26px;
+}
 .bottom-line {
-  width: 80px;
-  height: 4px;
+    width: 80px;
+    height: 4px;
+    background-color: $red;
+    margin: 25px auto 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  padding: 15px 16px;
   background-color: $red;
-  margin: 25px auto 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
 }
 
 .header {
@@ -106,25 +113,16 @@ ul {
         margin-bottom: 80px;
       }
 
-      .header__text {
-        display: block;
-        font-size: 18px;
-
+      .text {
+        text-align: left;
         margin-top: 35px;
       }
 
-      .detail {
+      .btn {
         margin-top: 54px;
-        display: block;
-        text-decoration: none;
-        text-align: center;
         width: 250px;
         background-color: $red;
-        cursor: pointer;
         color: $textColorOnDark;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 15px 0 15px 15px;
       }
     }
 
@@ -156,7 +154,6 @@ ul {
           margin: 16px 20px;
 
           input[type="text"],
-          input[type="submit"],
           select {
             border: none;
             width: 100%;
@@ -169,12 +166,11 @@ ul {
             width: calc(100% - 15px);
           }
 
-          input[type="submit"] {
+          .btn {
             background-color: $red;
-            cursor: pointer;
             color: $textColorOnDark;
-            font-size: 18px;
-            line-height: 22px;
+            width: 100%;
+            border: none;
           }
         }
       }
@@ -230,13 +226,13 @@ ul {
       padding-right: 63px;
 
       .text {
-        @extend .text-on-loght;
-        line-height: 26px;
+        text-align: left;
+        color: $textColorOnLoght;
       }
 
       .advantage-list {
         padding: 0;
-        margin: 0;
+        margin: 35px 0;
         list-style: none;
 
         .advantage-list__item {
@@ -267,20 +263,14 @@ ul {
   }
 
   .nout {
+    @extend .d-flex-centr;
     background-color: $red;
     color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
     padding: 60px 0;
     position: relative;
 
-    .text {
-      line-height: 26px;
-    }
 
-    .title {
+    .d-flex-centr {
       width: 600px;
       margin-bottom: 36px;
 
@@ -309,14 +299,11 @@ ul {
       line-height: 26px;
     }
 
+    @extend .d-flex-centr;
     background-color: white;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
     padding: 60px 30px 30px 30px;
 
-    .title {
+    .d-flex-centr {
       width: 600px;
       margin-bottom: 36px;
 
@@ -351,11 +338,11 @@ ul {
   .comment {
     background-color: #ffecb3;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 40px 30px 40px 30px;
 
     .text {
+      text-align: left;
       color: $HtextColorOnLoght;
     }
 
@@ -369,11 +356,6 @@ ul {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-
-      span {
-        display: block;
-        line-height: 22px;
-      }
     }
   }
 
@@ -391,10 +373,7 @@ ul {
     }
 
     .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      @extend .d-flex-centr;
       padding: 35px 24px;
       background-color: white;
 
@@ -444,15 +423,8 @@ ul {
         color: $textColorOnLoght;
       }
 
-      &__detail {
-        text-decoration: none;
-        display: block;
+      &__detail {;
         width: 100%;
-        text-align: center;
-        background-color: $red;
-        color: white;
-        font-weight: 600;
-        padding: 15px 0px;
       }
 
       &:hover {
@@ -479,31 +451,19 @@ ul {
 .footer {
   color: white;
 
-  .title {
+  .d-flex-centr {
     background-image: url(../img/texture.original.jpeg);
     padding: 58px 0 38px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    .h3 {
-      color: $red;
+    .text {
+      width: 540px;
+      margin-top: 14px
     }
-
-    span {
-      display: block;
+    .bottom-line {
+      background-color: white;
     }
-
-    .footer__btn {
-      text-decoration: none;
-      display: block;
+    .footer__link {
       width: 350px;
-      text-align: center;
-      background-color: $red;
-      color: white;
-      font-weight: 600;
-      padding: 15px 0px;
       margin: 35px auto;
     }
 
@@ -526,7 +486,6 @@ ul {
         font-family: Lato;
         color: white;
         font-weight: 800;
-        // font-size: 34px;
       }
     }
   }
