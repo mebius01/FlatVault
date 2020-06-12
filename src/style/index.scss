@@ -187,10 +187,18 @@ body {
 
       &__item {
         a {
+          font-family: 'Lily Script One';
+          font-size: 20px;
+          color: white;
+          text-decoration: none;
           display: block;
           text-decoration: none;
           background-color: rgb(55, 77, 91);
-          padding: 20px;
+          padding: 20px 15px;
+        }
+
+        img {
+          margin-right: 10px;
         }
       }
 
@@ -481,9 +489,10 @@ body {
         padding: 10px 16px;
         background-color: $red;
         margin: 12px;
-        font-family: Lato;
         color: white;
-        font-weight: 800;
+        font-family: 'Lily Script One';
+        font-size: 20px;
+        font-weight: 400;
       }
     }
   }

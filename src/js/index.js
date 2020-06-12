@@ -1,14 +1,13 @@
-import 'normalize-scss'
-import '../style/index.scss'
+import './static';
 
-import '../img/icon.png'
-import '../img/logo.png'
-import '../img/brands.png'
-import '../img/mobile.png'
-import '../img/laptop.png'
+const brand = document.querySelector('.brand')
 
-import '../img/icon1.png'
-import '../img/icon2.png'
-import '../img/icon3.png'
+console.log(brand);
+brand.addEventListener('click', hedlerAddActove)
 
-import '../img/client.png'
+function hedlerAddActove(event) {
+  event.preventDefault();
+  if (el.classList.contains('brand__link')) {
+    el.classList.toggle('active')
+  }
+}
