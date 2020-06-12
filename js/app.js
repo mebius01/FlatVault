@@ -319,7 +319,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./static */ \"./src/js/static.js\");\n\n\nconst brand = document.querySelector('.brand')\n\nconsole.log(brand);\nbrand.addEventListener('click', hedlerAddActove)\n\nfunction hedlerAddActove(event) {\n  event.preventDefault();\n  if (el.classList.contains('brand__link')) {\n    el.classList.toggle('active')\n  }\n}\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./static */ \"./src/js/static.js\");\n\n\nconst brand = document.querySelector('.brand')\n\nconsole.log(brand);\nbrand.addEventListener('click', hedlerAddActove)\n\nfunction hedlerAddActove(event) {\n  event.preventDefault();\n  const el = event.target;\n  if (el.classList.contains('brand__link')) {\n    el.classList.toggle('active')\n  }\n}\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
