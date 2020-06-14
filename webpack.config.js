@@ -38,6 +38,7 @@ module.exports = {
           'sass-loader',
         ],
       },
+      // fonts
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [{
