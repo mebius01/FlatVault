@@ -5,12 +5,15 @@ const {
 } = require('./sum')
 
 const brand = document.querySelector('.brand')
+const footer_link = document.querySelector('.footer__link')
+const form = document.querySelector('.form')
+const callform = document.querySelector('.callform')
 
-console.log(brand);
-brand.addEventListener('click', hedlerAddActove)
+footer_link.addEventListener('click', hendlerCallForm)
+brand.addEventListener('click', hedlerAddActive)
 
 
-function hedlerAddActove(event) {
+function hedlerAddActive(event) {
   event.preventDefault();
   const el = event.target;
   if (el.classList.contains('brand__link')) {
@@ -18,5 +21,7 @@ function hedlerAddActove(event) {
   }
 }
 
-console.log(sum(2, 3));
-console.log(minus(4, 2));
+function hendlerCallForm(e) {
+  e.preventDefault();
+  console.log(form);
+}

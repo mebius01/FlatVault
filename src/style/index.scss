@@ -92,6 +92,15 @@ ul {
   cursor: pointer;
 }
 
+// .modal {
+//   padding: 50px;
+//   background: #ccc;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
 .header {
   background-image: url(../img/texture.original.jpeg);
   color: $textColorOnDark;
@@ -507,5 +516,61 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 36px 0;
+  }
+}
+
+.modal {
+  padding: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(238, 239, 241, 0.300);
+
+  .form__header {
+    background-color: $red;
+    padding: 30px 30px 74px 30px;
+    text-align: center;
+    clip-path: polygon(0% 0%,
+        100% 0%,
+        100% 75%,
+        60% 75%,
+        50% 90%,
+        40% 75%,
+        0% 75%);
+  }
+
+  .form__content {
+    *:focus {
+      outline: none;
+    }
+
+    .form__item {
+      margin: 16px 20px;
+
+      input[type="text"],
+      select {
+        border: none;
+        width: 100%;
+        color: $textColorOnLoght;
+        font-size: 13px;
+        padding: 15px 0 15px 15px;
+      }
+
+      input[type="text"] {
+        width: calc(100% - 15px);
+      }
+
+      .btn {
+        background-color: $red;
+        color: $textColorOnDark;
+        width: 100%;
+        border: none;
+      }
+    }
   }
 }
